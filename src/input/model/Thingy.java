@@ -12,6 +12,14 @@ public Thingy()
 		age = -99;
 		weight = -.008;
 	}
+
+public Thingy(String name, int age, double weight)
+{
+this.name = name;
+this.age = age;
+this.weight = weight;
+}
+
 //getters
 	public String getName()
 	{
