@@ -17,6 +17,7 @@ public class InputController
 		//Defining a thing with () = creating. a (); means you're calling it
 	}
 	
+	
 	public void start()
 	{
 		                                                        //the.grabAnswer makes a text field 
@@ -79,7 +80,8 @@ else
 				
 				try
 				{
-				double temp = Double.parseDouble(input); //whattttttt
+					// the double after the = is a capital D, but it still works.......
+				double temp = Double.parseDouble(input); 
 				isDouble = true;
 				}
 				catch(NumberFormatException error)
