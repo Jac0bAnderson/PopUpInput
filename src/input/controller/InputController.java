@@ -1,6 +1,7 @@
 package input.controller;
 
 import input.view.PopUpDisplay;
+import input.model.Thingy;
 
 public class InputController
 {
@@ -32,11 +33,11 @@ public class InputController
 	
 	if(isInteger(temp))
 	{
-		myAge = Integer.parseInt(temp);
+		//myAge = Integer.parseInt(temp);
 	}
 else
 	{
-		myAge = -999999999;
+		//myAge = -999999999;
 	}
 	
 	
@@ -53,7 +54,7 @@ else
 	}
 	myPopUps.showResponse("you typed" +myWeight);
 	
-	myTestThing = new Thingy(myName, myAge, myWeight);
+	//myTestThing = new Thingy(myName, myAge, myWeight);
 	
 	}
 	private boolean isInteger(String input)
@@ -78,7 +79,7 @@ else
 				
 				try
 				{
-				double temp = Double.parseDouble(input);
+				double temp = Double.parseDouble(input); //whattttttt
 				isDouble = true;
 				}
 				catch(NumberFormatException error)

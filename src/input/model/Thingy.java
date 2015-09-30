@@ -1,10 +1,12 @@
 package input.model;
 
+//declaration
 public class Thingy
 {
 private String name;
 private int age;
 private double weight;
+
 
 public Thingy()
 	{
@@ -46,7 +48,7 @@ public void setAge(int age)
 	{
 	this.age = age;
 	}
-public void setWeight(Double weight)
+public void setWeight(double weight)
 {
 	this.weight = weight;
 	
