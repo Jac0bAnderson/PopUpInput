@@ -17,28 +17,28 @@ public class InputController
 		//Defining a thing with () = creating. a (); means you're calling it
 	}
 	
-	
+	 
 	public void start()
 	{
 		                                                        //the.grabAnswer makes a text field 
-		String temp = myPopUps.grabAnswer("typ in ur name m8y");
+		String myName = myPopUps.grabAnswer("typ in ur name m8y");
 	
-	myPopUps.showResponse("Your name is " + temp + " ,now clik like");
+	myPopUps.showResponse("Your name is " + myName + " ,now clik like");
 	
 	String tempAge = myPopUps.grabAnswer("type in your age");
-	int myWight;
-	while(!isInteger(temp))
+	int myAge;
+	while(!isInteger(tempAge))
 	{
-		temp =myPopUps.grabAnswer("typein a positive integer for your age");
+		tempAge =myPopUps.grabAnswer("type in a positive integer for your age");
 	}
 	
-	if(isInteger(temp))
+	if(isInteger(tempAge))
 	{
-		//myAge = Integer.parseInt(temp);
+		myAge = Integer.parseInt(tempAge);
 	}
 else
 	{
-		//myAge = -999999999;
+		myAge = -999999999;
 	}
 	
 	
@@ -53,9 +53,9 @@ else
 	{
 		myWeight = -999999;
 	}
-	myPopUps.showResponse("you typed" +myWeight);
+	myPopUps.showResponse("you weigh " +myWeight+ "pounds");
 	
-	//myTestThing = new Thingy(myName, myAge, myWeight);
+	myTestThing = new Thingy(myName, myAge, myWeight);
 	
 	}
 	private boolean isInteger(String input)
